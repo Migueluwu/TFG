@@ -1,0 +1,472 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+div#content {
+    display: flex;
+    flex: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    background-color: #75C5F0;
+}
+
+div#atenua{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #E0E0E0;
+    opacity: 50%;
+    z-index: 5;
+}
+
+div.emergente{
+    position: absolute;
+    z-index: 10;
+    background-color: #2267A1;
+    border: 2px solid white;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    max-width: 700px;
+    border-radius: 5px;
+    margin: 3rem 0;
+    padding: 3rem 2rem 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: fit-content;
+}
+
+/*GENERALES*/
+
+.text-shadow{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.label-form{
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.input-text {
+    background: rgba(117, 197, 240, 0.6);
+    border: 1px solid #75AEF0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    height: 2rem;
+    padding: 0 .5rem;
+}
+
+.input-text:focus{
+    outline: 2px solid #2267A1;
+}
+
+.input-disabled{
+    color: #707070;
+    background: rgba(117, 197, 240, 0.336);
+    border-color: #75aef085;
+    cursor: not-allowed
+}
+
+.text-blue{
+    color: #2267A1;
+}
+
+.text-link{
+    color: #2267A1;
+    font-weight: 600;
+    text-decoration: underline;
+    background: none;
+    border: none;
+}
+
+.text-link:active{
+    color: #75C5F0;
+}
+
+.text-sm{
+    font-size: 0.75rem;
+}
+
+.text-md{
+    font-size: 1.25rem;
+}
+
+.text-lg{
+    font-size: 1.5rem;
+}
+
+.text-xl{
+    font-size: 2rem;
+}
+
+.btn-yellow{
+    background: #F9F078;
+    border: 1px solid #846C58;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-yellow-disabled{
+    background: #F9F078!important;
+    pointer-events: all!important;
+    cursor: not-allowed;
+}
+
+.btn-md{
+    padding: 0.5rem 1rem;
+}
+
+.btn-lg{
+    height: 78px!important;
+}
+
+.btn-yellow:hover{
+    background: #E0C47E;
+    border: 1px solid #846C58;
+}
+
+.btn-yellow:active{
+    background: #D1B98B!important;
+}
+
+.btn-sm{
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+}
+.btn-none{
+    background: none;
+    border: none;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.max-w-350{
+    max-width: 350px;
+}
+
+h1.section-title{
+    flex:100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+ul{
+    list-style: none;
+}
+
+.error-block{
+    flex: 100%;
+    min-height:2rem;
+}
+
+.line-info{
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+}
+/*HEADER*/
+
+header#header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 15vh;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-logo{
+    max-width: 50vw;
+    max-height: 100px;
+}
+
+button#user-header{
+    background: none;
+    border: none;
+}
+
+button#user-header>svg{
+    height: 2.5rem;
+    color: #2267A1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    background: none;
+    border: none;
+}
+
+button#user-header:hover>svg {
+    color: #75C5F0;
+}
+
+button#user-header:hover>svg {
+    color: #75c5f0ab;
+}
+
+div#datos-user{
+    position: absolute;
+    width:100%;
+    display: flex;
+    justify-content: end;
+    right: 0;
+    bottom: 0;
+}
+
+/*MAIN*/
+
+main#main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 100%;
+    background-color: #75C5F0;
+    margin-top: 15vh;;
+    min-height: 72.5vh;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div#main-frame{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    max-width: 950px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 3rem 0;
+    padding: 1rem 2rem 3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: fit-content;
+}
+
+div#frame-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0
+}
+
+/******* LOGIN *******/
+
+form#form-login{
+    display: flex;
+    flex:100%;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+    max-width: 350px;
+}
+
+form#form-login>input {
+    flex: 100%;
+}
+
+/******* REGISTRO *******/
+
+textarea#descripcion{
+    background: rgba(117, 197, 240, 0.6);
+    border: 1px solid #75AEF0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: .5rem;  
+}
+
+textarea#descripcion:focus{
+    outline: 2px solid #2267A1;
+}
+
+/*FOOTER*/
+footer#footer{ 
+    background-color: #2267A1;
+    height: 12.5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/********* MENÚ DESPLEGABLE **********/
+
+header>nav#menu-hamburguesa {
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    order:0
+}
+
+header span.etiqueta-icono-header{
+    padding-top:1rem;
+    color: #2267A1;
+    font-family: Lobster;
+    font-size: 1.25rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    display: none;
+    }
+    
+nav#menu-hamburguesa>div#hamb-icon {
+    cursor: pointer;
+    width: 2rem;
+    height: 3rem;
+    margin: auto 0;
+    position: relative;
+}
+
+span.hamburguer-line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #2267A1;
+    position: absolute;
+    margin-top: -0.125rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+div#hamb-icon:hover>span.hamburguer-line {
+    background-color: #75C5F0;
+}
+
+div#hamb-icon:hover>span.hamburguer-line {
+    background-color: #75c5f0ab;
+}
+
+span.hamburguer-line:nth-child(1) {
+    top: 25%;
+}
+
+span.hamburguer-line:nth-child(2) {
+    top: 50%;
+}
+
+span.hamburguer-line:nth-child(3) {
+    top: 75%;
+}
+
+nav#menu-hamburguesa>div#menu-desplegable {
+    height: 100vh;
+    padding-bottom: 15vh;
+    position: absolute;
+    top: 15vh;
+    left: -100%;
+    width: 100%;
+    flex-flow: column;
+    z-index: 2;
+    transition: left ease-out 0.5s;
+}
+
+nav#menu-hamburguesa>div#menu-desplegable>div#menu-principal {
+    border-top: 4px solid rgba(0, 0, 0, 0.055);
+    background-color: #2267A1;
+    flex: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+div#menu-principal svg {
+    height: 2rem;
+    color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+
+div#menu-principal>nav#opt-menu {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.drop-menu-option{
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin: 1.25rem;
+}
+
+div#menu-principal .drop-menu-option:hover>*{
+    color: #75C5F0;
+}
+
+div#menu-principal .drop-menu-option:active>*{
+    color: #75c5f0ab;
+}
+
+.drop-menu-main-option{
+    font-size: 2rem;
+}
+
+div#menu-principal .drop-menu-main-option>svg{
+    height: 2.5rem;
+}
+
+/*Boton exportar*/
+
+button#btn_exportar svg {
+    height: 2rem;
+    color: #2267A1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+/*Importar*/
+
+.input-file {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .input-file::before {
+    background-color: #2267A1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Seleccionar';
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .input-file input[type="file"] {
+    opacity: 0;
+    width: 200px;
+    height: 32px;
+    display: inline-block;
+  }
+
+
+
+  @media all and (min-width:992px) {
+
+    nav#menu-hamburguesa>div#menu-desplegable {
+        width: 40%;
+        max-width: 400px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+  }
